@@ -61,14 +61,14 @@
     <task id="13" name="Prot&#xF3;tipos de Tela" note="" work="115200" start="20150521T000000Z" end="20150526T170000Z" work-start="20150521T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150521T000000Z"/>
     </task>
-    <task id="14" name="Desenvolvimento de estrutura do servidor" note="" work="144000" start="20150629T000000Z" end="20150703T170000Z" work-start="20150629T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150629T000000Z"/>
+    <task id="14" name="Desenvolvimento de estrutura do servidor" note="" work="144000" start="20150527T000000Z" end="20150602T170000Z" work-start="20150527T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150527T000000Z"/>
     </task>
-    <task id="15" name="Desenvolvimento de estrutura web" note="" work="57600" start="20150604T000000Z" end="20150605T170000Z" work-start="20150604T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150604T000000Z"/>
+    <task id="15" name="Desenvolvimento de estrutura web" note="" work="57600" start="20150603T000000Z" end="20150604T170000Z" work-start="20150603T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150603T000000Z"/>
     </task>
-    <task id="16" name="Desenvolvimento de estrutura android" note="" work="57600" start="20150608T000000Z" end="20150609T170000Z" work-start="20150608T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150608T000000Z"/>
+    <task id="16" name="Desenvolvimento de estrutura android" note="" work="86400" start="20150605T000000Z" end="20150609T170000Z" work-start="20150605T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150605T000000Z"/>
     </task>
     <task id="17" name="Desenvolvimento de estrutura de acesso" note="" work="28800" start="20150610T000000Z" end="20150610T170000Z" work-start="20150610T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150610T000000Z"/>
