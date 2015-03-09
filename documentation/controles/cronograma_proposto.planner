@@ -105,6 +105,7 @@
     <resource id="12" name="Adobe Illustrator" short-name="" type="2" units="0" email="" note="" std-rate="0"/>
     <resource id="13" name="Pencil" short-name="" type="2" units="0" email="" note="" std-rate="0"/>
     <resource id="14" name="Oracle Designer" short-name="" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="15" name="Pop - Prototyping on Paper" short-name="" type="2" units="0" email="" note="" std-rate="0"/>
   </resources>
   <allocations>
     <allocation task-id="18" resource-id="4" units="100"/>
