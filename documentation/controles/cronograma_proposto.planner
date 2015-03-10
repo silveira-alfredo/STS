@@ -6,7 +6,9 @@
   <properties>
     <property name="Avaliacoes" value="31/03/2015 - primeiras entregas"/>
   </properties>
-  <phases/>
+  <phases>
+    <phase name="Avaliacao - 31/03/2015"/>
+  </phases>
   <calendars>
     <day-types>
       <day-type id="0" name="Working" description="A default working day"/>
@@ -155,6 +157,7 @@
     <resource id="13" name="Pencil" short-name="" type="2" units="0" email="" note="" std-rate="0"/>
     <resource id="14" name="Oracle Designer" short-name="" type="2" units="0" email="" note="" std-rate="0"/>
     <resource id="15" name="Pop - Prototyping on Paper" short-name="" type="2" units="0" email="" note="" std-rate="0"/>
+    <resource id="16" name="Andr&#xE9;" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
   </resources>
   <allocations>
     <allocation task-id="18" resource-id="4" units="100"/>
