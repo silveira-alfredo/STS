@@ -41,13 +41,13 @@
         <predecessor id="1" predecessor-id="2" type="FS"/>
       </predecessors>
     </task>
-    <task id="4" name="Defini&#xE7;&#xE3;o do escopo e das funcionalidades" note="" work="144000" start="20150305T000000Z" end="20150311T170000Z" work-start="20150305T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+    <task id="4" name="Defini&#xE7;&#xE3;o do escopo e das funcionalidades" note="" work="144000" start="20150305T000000Z" end="20150311T170000Z" work-start="20150305T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150305T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="3" type="FS"/>
       </predecessors>
     </task>
-    <task id="5" name="Referencial Te&#xF3;rico" note="" work="57600" start="20150312T000000Z" end="20150313T170000Z" work-start="20150312T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="5" name="Referencial Te&#xF3;rico" note="" work="57600" start="20150312T000000Z" end="20150313T170000Z" work-start="20150312T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150312T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="4" type="FS"/>
@@ -84,17 +84,17 @@
         <predecessor id="1" predecessor-id="9" type="FS"/>
       </predecessors>
     </task>
-    <task id="11" name="Driagrama de Classes" note="" work="230400" start="20150407T000000Z" end="20150416T170000Z" work-start="20150407T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="11" name="Modelo Entidade Relacionamento - MER" note="" work="230400" start="20150407T000000Z" end="20150416T170000Z" work-start="20150407T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150407T000000Z"/>
     </task>
-    <task id="12" name="Modelo Entidade Relacionamento - MER" note="" work="230400" start="20150417T000000Z" end="20150428T170000Z" work-start="20150417T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="12" name="Driagrama de Classes" note="" work="230400" start="20150417T000000Z" end="20150428T170000Z" work-start="20150417T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150417T000000Z"/>
     </task>
     <task id="13" name="Diagramas de Sequ&#xEA;ncia" note="" work="230400" start="20150429T000000Z" end="20150508T170000Z" work-start="20150429T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150429T000000Z"/>
       <predecessors>
-        <predecessor id="1" predecessor-id="11" type="FS"/>
         <predecessor id="1" predecessor-id="12" type="FS"/>
+        <predecessor id="1" predecessor-id="11" type="FS"/>
       </predecessors>
     </task>
     <task id="14" name="Prot&#xF3;tipos de Tela" note="" work="115200" start="20150511T000000Z" end="20150512T170000Z" work-start="20150511T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
@@ -153,7 +153,7 @@
     <allocation task-id="18" resource-id="6" units="100"/>
     <allocation task-id="16" resource-id="6" units="100"/>
     <allocation task-id="13" resource-id="7" units="100"/>
-    <allocation task-id="11" resource-id="7" units="100"/>
+    <allocation task-id="12" resource-id="7" units="100"/>
     <allocation task-id="9" resource-id="7" units="100"/>
     <allocation task-id="3" resource-id="8" units="100"/>
     <allocation task-id="15" resource-id="9" units="100"/>
@@ -168,6 +168,6 @@
     <allocation task-id="20" resource-id="11" units="100"/>
     <allocation task-id="14" resource-id="12" units="100"/>
     <allocation task-id="14" resource-id="13" units="100"/>
-    <allocation task-id="12" resource-id="14" units="100"/>
+    <allocation task-id="11" resource-id="14" units="100"/>
   </allocations>
 </project>
