@@ -53,32 +53,32 @@
         <predecessor id="1" predecessor-id="4" type="FS"/>
       </predecessors>
     </task>
-    <task id="6" name="Prop&#xF3;sito e Motiva&#xE7;&#xE3;o" note="" work="230400" start="20150316T000000Z" end="20150325T170000Z" work-start="20150316T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="6" name="Prop&#xF3;sito e Motiva&#xE7;&#xE3;o" note="" work="230400" start="20150316T000000Z" end="20150325T170000Z" work-start="20150316T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150316T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="5" type="FS"/>
       </predecessors>
     </task>
-    <task id="7" name="Modelo Descritivo" note="" work="86400" start="20150325T000000Z" end="20150327T170000Z" work-start="20150325T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="7" name="Modelo Descritivo" note="" work="86400" start="20150325T000000Z" end="20150327T170000Z" work-start="20150325T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150325T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="6" type="FS"/>
       </predecessors>
     </task>
-    <task id="8" name="Requisitos Funcionais e N&#xE3;o Funcionais" note="" work="144000" start="20150319T000000Z" end="20150325T170000Z" work-start="20150319T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="8" name="Requisitos Funcionais e N&#xE3;o Funcionais" note="" work="144000" start="20150319T000000Z" end="20150325T170000Z" work-start="20150319T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150319T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="6" type="FS"/>
       </predecessors>
     </task>
-    <task id="9" name="Diagramas de Caso de Uso" note="" work="316800" start="20150309T000000Z" end="20150323T170000Z" work-start="20150309T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="9" name="Diagramas de Caso de Uso" note="" work="316800" start="20150309T000000Z" end="20150323T170000Z" work-start="20150309T080000Z" percent-complete="99" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150309T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="7" type="FS"/>
         <predecessor id="1" predecessor-id="8" type="FS"/>
       </predecessors>
     </task>
-    <task id="10" name="Especifica&#xE7;&#xE3;o de Caso de Uso" note="" work="259200" start="20150313T000000Z" end="20150325T170000Z" work-start="20150313T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="10" name="Especifica&#xE7;&#xE3;o de Caso de Uso" note="" work="374400" start="20150313T000000Z" end="20150331T170000Z" work-start="20150313T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150313T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="9" type="FS"/>
