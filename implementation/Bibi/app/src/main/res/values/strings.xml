@@ -2,5 +2,20 @@
     <string name="app_name">Bibi</string>
 
     <string name="hello_world">Hello world!</string>
-    <string name="action_settings">Settings</string>
+    <string name="action_settings">Configurações</string>
+
+    <!-- Comum a ambos -->
+
+    <string name="tab_destinos">Destinos</string>
+    <string name="tab_confirmar_presenca">Confirmar presença</string>
+
+    <!-- Passenger -->
+
+    <string name="tab_acompanhamento">Acompanhar trajeto</string>
+
+    <!-- Driver -->
+
+    <string name="tab_trajetos">Trajetos</string>
+
+    <!-- Mensagens -->
 </resources>

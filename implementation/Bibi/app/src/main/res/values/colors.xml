@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- Tab bar colors-->
+
+    <color name="TabBlue">#33B5E5</color>
+    <color name="TabBlueDark">#0099CC</color>
+    <color name="TabGreen">#99CC00</color>
+    <color name="TabGreenDark">#669900</color>
+   <!-- <color name="tabsScrollColor">#ffffffff</color> -->
+
+    <color name="white">#ffffffff</color>
+    <color name="tabsScrollColor">#99CC00</color>
+
+
+    <!-- Tabs colors -->
+
+    <!-- Login colors -->
+
+
+
+</resources>

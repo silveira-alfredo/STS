@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/d">
+
+    <!--
+        <ImageView
+
+            android:id="@+id/logo_image"
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentEnd="true"
+            android:layout_marginRight="10dip"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/bibi"/> -->
+
+    <Button
+        android:id="@+id/signin_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="enviar dados de recuperação"
+        android:onClick="recoverFinishedClick"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Digite o código da empresa contratada e o email de recuperação"
+        android:id="@+id/explainText"
+        android:layout_marginTop="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:singleLine="false"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"/>
+
+    <EditText
+        android:id="@+id/recover_cod_empresa"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textCapCharacters"
+        android:hint="código da empresa"
+        android:layout_marginTop="49dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/explainText"
+        android:layout_alignStart="@+id/signin_button" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textEmailAddress"
+        android:ems="10"
+        android:id="@+id/recover_email"
+        android:hint="e-mail"
+        android:layout_marginTop="20dp"
+
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/recover_cod_empresa"
+        android:layout_alignStart="@+id/recover_cod_empresa" />
+
+</RelativeLayout>
