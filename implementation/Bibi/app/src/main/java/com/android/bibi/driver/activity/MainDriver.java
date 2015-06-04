@@ -23,7 +23,7 @@ public class MainDriver extends ActionBarActivity {
     ViewPager pager;
     ViewDriverPagerAdapter adapter;
     SlidingTabLayout tabs;
-    CharSequence Titles[]={"Visualizar destinos","Iniciar trajeto", "Visualizar passageiros" , "Confirmar presença"};
+    CharSequence Titles[]={"ITINERÁRIOS","NAVEGAR", "PASSAGEIROS" , "PRESENÇAS"};
     int Numboftabs = 4;
 
     @Override
@@ -35,6 +35,7 @@ public class MainDriver extends ActionBarActivity {
         // Creating The Toolbar and setting it as the Toolbar for the activity
 
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        toolbar.setLogo(R.drawable.actionbar);
         setSupportActionBar(toolbar);
 
 

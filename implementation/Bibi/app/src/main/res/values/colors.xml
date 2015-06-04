@@ -11,6 +11,7 @@
 
     <color name="white">#ffffffff</color>
     <color name="tabsScrollColor">#99CC00</color>
+    <color name="grey">#ffc5bdcd</color>
 
 
     <!-- Tabs colors -->

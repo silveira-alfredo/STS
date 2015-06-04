@@ -9,6 +9,13 @@
     <string name="tab_destinos">Destinos</string>
     <string name="tab_confirmar_presenca">Confirmar presença</string>
 
+    <!-- SignIn -->
+
+    <string name="signin_dialog_message"> Campos inválidos</string>
+    <string name="signin_dialog_title"> Preenchimento incorreto </string>
+    <string name="ok"> ok </string>
+    <string name="cancel"> cancelar </string>
+
     <!-- Passenger -->
 
     <string name="tab_acompanhamento">Acompanhar trajeto</string>
@@ -18,4 +25,8 @@
     <string name="tab_trajetos">Trajetos</string>
 
     <!-- Mensagens -->
+
+    <!-- SERVIDOR-->
+    <string name="http_response">HTTP_RESPONSE</string>
+
 </resources>

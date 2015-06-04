@@ -1,6 +1,8 @@
 package com.android.bibi.similar.activity;
 
+import android.app.AlertDialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
@@ -10,11 +12,11 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.android.bibi.R;
-import com.android.bibi.passenger.activity.MainPassenger;
-import com.android.bibi.similar.controller.SignInController;
+import com.android.bibi.similar.model.SignIn;
 
 /**
  * Created by jsalgado on 28/05/15.
+ * Sign Controller
  */
 public class SignInActivity extends ActionBarActivity {
 
@@ -40,16 +42,35 @@ public class SignInActivity extends ActionBarActivity {
     }
 
     public void signInClicked(View v){
+
+         if(validateLoginToServer()){
+            //dados invalidos
+            showDialog(true);
+        }
+
+    }
+
+    public boolean validateLoginToServer() {
+        boolean isValid = false;
+
         String companyCode = String.valueOf(mCompanyCode.getText());
 
         String email = String.valueOf(mEmail.getText());
 
         String password = String.valueOf(mPassword.getText());
 
-        SignInController controller = new SignInController(companyCode, mContext,password, email);
-        controller.validateLoginToServer();
+        //TODO validacoes
+        if (!email.isEmpty() && !companyCode.isEmpty() && !password.isEmpty()) {
 
+            SignIn signIn = new SignIn(companyCode, email, password, mContext);
+            signIn.serverSignIn();
+        } else {
+
+        }
+
+        return isValid;
     }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
@@ -71,5 +92,29 @@ public class SignInActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    private void showDialog(boolean succes) {
+
+        // 1. Instantiate an AlertDialog.Builder with its constructor
+        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+
+       // 2. Chain together various setter methods to set the dialog characteristics
+        builder.setMessage(R.string.signin_dialog_message)
+                .setTitle(R.string.signin_dialog_title);
+
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked OK button
+            }
+        });
+        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User cancelled the dialog
+            }
+        });
+
+// 3. Get the AlertDialog from create()
+        AlertDialog dialog = builder.create();
     }
 }

@@ -21,7 +21,7 @@ public class MainPassenger extends ActionBarActivity {
     ViewPager pager;
     ViewPassangerPagerAdapter adapter;
     SlidingTabLayout tabs;
-    CharSequence Titles[]={"Visualizar destinos","Visualizar passageiros","Acompanhar trajeto","Confirmar presença","Informações do motorista"};
+    CharSequence Titles[]={"DESTINOS","PASSAGEIROS","ACOMPANHAMENTO","PRESENÇA","MOTORISTA"};
     int Numboftabs =5;
 
     @Override
@@ -33,6 +33,7 @@ public class MainPassenger extends ActionBarActivity {
         // Creating The Toolbar and setting it as the Toolbar for the activity
 
         toolbar = (Toolbar) findViewById(R.id.tool_bar);
+        toolbar.setLogo(R.drawable.actionbar);
         setSupportActionBar(toolbar);
 
 

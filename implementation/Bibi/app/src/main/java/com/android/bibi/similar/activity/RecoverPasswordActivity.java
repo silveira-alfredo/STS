@@ -1,7 +1,8 @@
 package com.android.bibi.similar.activity;
 
+import android.app.AlertDialog;
 import android.content.Context;
-import android.content.Intent;
+import android.content.DialogInterface;
 import android.os.Bundle;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
@@ -10,8 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.android.bibi.R;
-import com.android.bibi.passenger.activity.MainPassenger;
-import com.android.bibi.similar.controller.RecoverController;
+import com.android.bibi.similar.model.Recover;
 
 /**
  * Created by jsalgado on 30/05/15.
@@ -34,13 +34,11 @@ public class RecoverPasswordActivity extends ActionBarActivity {
 
     public void recoverFinishedClick(View v){
 
-
-        String companyCode = String.valueOf(mCompanyCode.getText());
-        String email = String.valueOf(mEmail.getText());
-
-
-        RecoverController recover = new RecoverController(companyCode, mContext,email);
-        recover.validateRecoverToServer();
+      if(validateRecoverToServer()){
+             showDialog(true);
+        }else{
+            showDialog(false);
+        }
     }
 
     @Override
@@ -63,6 +61,48 @@ public class RecoverPasswordActivity extends ActionBarActivity {
         }
 
         return super.onOptionsItemSelected(item);
+    }
+
+    public boolean validateRecoverToServer(){
+        boolean isValid = false;
+
+        String companyCode = String.valueOf(mCompanyCode.getText());
+        String email = String.valueOf(mEmail.getText());
+
+        //TODO validacoes
+        if(!email.isEmpty() && !companyCode.isEmpty()){
+
+            Recover recover = new Recover(companyCode, email, mContext);
+            if( recover.serverRecover()){
+
+                isValid = true;
+            }
+        }
+
+        return isValid;
+    }
+    private void showDialog(boolean sucess) {
+
+        // 1. Instantiate an AlertDialog.Builder with its constructor
+        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+
+// 2. Chain together various setter methods to set the dialog characteristics
+        builder.setMessage(R.string.signin_dialog_message)
+                .setTitle(R.string.signin_dialog_title);
+
+        builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User clicked OK button
+            }
+        });
+        builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
+            public void onClick(DialogInterface dialog, int id) {
+                // User cancelled the dialog
+            }
+        });
+
+// 3. Get the AlertDialog from create()
+        AlertDialog dialog = builder.create();
     }
 }
 

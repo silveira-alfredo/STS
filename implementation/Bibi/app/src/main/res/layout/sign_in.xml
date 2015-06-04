@@ -50,11 +50,13 @@
         android:layout_alignStart="@+id/signin_email"
         android:layout_marginTop="30dp" />
 
+    <!--style="?android:attr/borderlessButtonStyle" -->
     <Button
         android:id="@+id/signin_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="entrar"
+        android:background="@drawable/custom_bibi_button"
         android:onClick="signInClicked"
         android:layout_centerVertical="true"
         android:layout_alignStart="@+id/signin_senha" />
