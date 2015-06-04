@@ -12,6 +12,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.android.bibi.R;
+import com.android.bibi.similar.controller.SignInController;
 import com.android.bibi.similar.model.SignIn;
 
 /**
@@ -43,32 +44,19 @@ public class SignInActivity extends ActionBarActivity {
 
     public void signInClicked(View v){
 
-         if(validateLoginToServer()){
-            //dados invalidos
-            showDialog(true);
-        }
-
-    }
-
-    public boolean validateLoginToServer() {
-        boolean isValid = false;
-
         String companyCode = String.valueOf(mCompanyCode.getText());
 
         String email = String.valueOf(mEmail.getText());
 
         String password = String.valueOf(mPassword.getText());
 
-        //TODO validacoes
-        if (!email.isEmpty() && !companyCode.isEmpty() && !password.isEmpty()) {
+        SignInController controller = new SignInController(companyCode, mContext, password, email);
 
-            SignIn signIn = new SignIn(companyCode, email, password, mContext);
-            signIn.serverSignIn();
-        } else {
-
+        if(!controller.validateLoginToServer()){
+            //dados invalidos
+            showDialog();
         }
 
-        return isValid;
     }
 
 
@@ -94,10 +82,10 @@ public class SignInActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    private void showDialog(boolean succes) {
+    private void showDialog() {
 
         // 1. Instantiate an AlertDialog.Builder with its constructor
-        AlertDialog.Builder builder = new AlertDialog.Builder(mContext);
+        final AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
        // 2. Chain together various setter methods to set the dialog characteristics
         builder.setMessage(R.string.signin_dialog_message)
@@ -106,6 +94,7 @@ public class SignInActivity extends ActionBarActivity {
         builder.setPositiveButton(R.string.ok, new DialogInterface.OnClickListener() {
             public void onClick(DialogInterface dialog, int id) {
                 // User clicked OK button
+
             }
         });
         builder.setNegativeButton(R.string.cancel, new DialogInterface.OnClickListener() {
@@ -116,5 +105,6 @@ public class SignInActivity extends ActionBarActivity {
 
 // 3. Get the AlertDialog from create()
         AlertDialog dialog = builder.create();
+        dialog.show();
     }
 }

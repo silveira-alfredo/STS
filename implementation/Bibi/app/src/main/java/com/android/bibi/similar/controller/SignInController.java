@@ -14,6 +14,8 @@ public class SignInController {
     private String mEmail;
     private String mPassword;
     private Context mContext;
+    private String mErrorMessage;
+    private String mTreatedMessage;
 
     public SignInController(String mCompanyCode, Context mContext, String mPassword, String mEmail) {
         this.mCompanyCode = mCompanyCode;
@@ -22,8 +24,24 @@ public class SignInController {
         this.mEmail = mEmail;
     }
 
+    public String getmTreatedMessage() {
+        return mTreatedMessage;
+    }
+
+    public void setmTreatedMessage(String mTreatedMessage) {
+        this.mTreatedMessage = mTreatedMessage;
+    }
+
     public String getmCompanyCode() {
         return mCompanyCode;
+    }
+
+    public String getmErrorMessage() {
+        return mErrorMessage;
+    }
+
+    public void setmErrorMessage(String mErrorMessage) {
+        this.mErrorMessage = mErrorMessage;
     }
 
     public void setmCompanyCode(String mCompanyCode) {
@@ -46,16 +64,39 @@ public class SignInController {
         this.mEmail = mEmail;
     }
 
-    public void validateLoginToServer(){
-        boolean isValid = false;
+
+    // VAI MUDAR ESSA ARQUITETURA
+
+    // tratamentos para os possiveis erros no servidor
+    public void treatSignInError(String errorMessage){
+
+        this.mErrorMessage = errorMessage;
+
+        //tratar a mensagem de erro
+
+        this.mTreatedMessage = "";
+
+    }
+
+    // obter tratamento de erro
+    public String getTreatedMessage(){
+
+        return this.mTreatedMessage;
+
+    }
+
+    public boolean validateLoginToServer(){
+        boolean isValid = true;
 
         //TODO validacoes
         if(!mEmail.isEmpty() && !mCompanyCode.isEmpty() && !mPassword.isEmpty()){
 
             SignIn signIn = new SignIn(mCompanyCode, mEmail,  mPassword , mContext);
-            signIn.serverSignIn();
-        }
+            isValid =  signIn.serverSignIn();
 
-        //return isValid;
+
+        }else isValid = false;
+
+        return isValid;
     }
 }

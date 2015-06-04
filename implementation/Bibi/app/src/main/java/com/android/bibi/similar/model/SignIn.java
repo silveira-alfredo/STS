@@ -18,12 +18,21 @@ public class SignIn {
     public String email;
     public String password;
     public Context context;
+    public int userType;
 
     public SignIn(String companyCode, String email, String password , Context context) {
         this.companyCode = companyCode;
         this.email = email;
         this.password = password;
         this.context = context;
+    }
+
+    public int getUserType() {
+        return userType;
+    }
+
+    public void setUserType(int userType) {
+        this.userType = userType;
     }
 
     public String getCompanyCode() {
@@ -50,15 +59,17 @@ public class SignIn {
         this.password = password;
     }
 
-    public void serverSignIn(){
+    public boolean serverSignIn(){
 
+        boolean isValid = true;
        // SignInTask task = new SignInTask();
 
-        //devera ser feito esse if na task
+        //chamar a task retornando aqui o tipo de usuario
+        //em caso de erro na propria task o erro será tratado e exibido na tela retornando aqui false.
 
         //tipo de usuario
-        int user_response_type = 0;
-        if (user_response_type == 0){
+        userType = 1;
+        if (userType == 0){
             Intent intent = new Intent(context, MainDriver.class);
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
@@ -67,5 +78,7 @@ public class SignIn {
             intent.setFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
             context.startActivity(intent);
         }
+
+        return  isValid;
     }
 }

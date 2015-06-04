@@ -11,6 +11,7 @@ import android.view.View;
 import android.widget.EditText;
 
 import com.android.bibi.R;
+import com.android.bibi.similar.controller.RecoverController;
 import com.android.bibi.similar.model.Recover;
 
 /**
@@ -33,8 +34,12 @@ public class RecoverPasswordActivity extends ActionBarActivity {
     }
 
     public void recoverFinishedClick(View v){
+        String companyCode = String.valueOf(mCompanyCode.getText());
+        String email = String.valueOf(mEmail.getText());
 
-      if(validateRecoverToServer()){
+        RecoverController recover = new RecoverController(companyCode , email , mContext);
+
+      if(recover.validateRecoverToServer()){
              showDialog(true);
         }else{
             showDialog(false);
@@ -63,24 +68,7 @@ public class RecoverPasswordActivity extends ActionBarActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public boolean validateRecoverToServer(){
-        boolean isValid = false;
 
-        String companyCode = String.valueOf(mCompanyCode.getText());
-        String email = String.valueOf(mEmail.getText());
-
-        //TODO validacoes
-        if(!email.isEmpty() && !companyCode.isEmpty()){
-
-            Recover recover = new Recover(companyCode, email, mContext);
-            if( recover.serverRecover()){
-
-                isValid = true;
-            }
-        }
-
-        return isValid;
-    }
     private void showDialog(boolean sucess) {
 
         // 1. Instantiate an AlertDialog.Builder with its constructor

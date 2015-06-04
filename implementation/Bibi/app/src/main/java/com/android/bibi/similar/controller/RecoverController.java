@@ -15,7 +15,7 @@ public class RecoverController {
     private String mEmail;
     private Context mContext;
 
-    public RecoverController(String mCompanyCode, Context mContext, String mEmail) {
+    public RecoverController(String mCompanyCode, String mEmail, Context mContext) {
         this.mCompanyCode = mCompanyCode;
         this.mContext = mContext;
         this.mEmail = mEmail;
@@ -37,7 +37,7 @@ public class RecoverController {
         this.mEmail = mEmail;
     }
 
-    public void validateRecoverToServer(){
+    public boolean validateRecoverToServer(){
         boolean isValid = false;
 
         //TODO validacoes
@@ -45,8 +45,11 @@ public class RecoverController {
 
             Recover recover = new Recover(mCompanyCode, mEmail, mContext);
             recover.serverRecover();
+        }else{
+            isValid = false;
         }
 
-        //return isValid;
+
+        return isValid;
     }
 }
