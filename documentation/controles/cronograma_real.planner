@@ -35,97 +35,88 @@
     <task id="2" name="Escolha do Tema" note="" work="57600" start="20150228T000000Z" end="20150303T170000Z" work-start="20150302T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150228T000000Z"/>
     </task>
-    <task id="3" name="Defini&#xE7;&#xE3;o do cronograma" note="" work="57600" start="20150306T000000Z" end="20150309T170000Z" work-start="20150306T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
+    <task id="3" name="Defini&#xE7;&#xE3;o do cronograma" note="" work="57600" start="20150306T000000Z" end="20150309T170000Z" work-start="20150306T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150306T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="2" type="FS"/>
       </predecessors>
     </task>
-    <task id="4" name="Defini&#xE7;&#xE3;o do escopo e das funcionalidades" note="" work="144000" start="20150305T000000Z" end="20150311T170000Z" work-start="20150305T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
+    <task id="4" name="Defini&#xE7;&#xE3;o do escopo e das funcionalidades" note="" work="144000" start="20150305T000000Z" end="20150311T170000Z" work-start="20150305T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150305T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="3" type="FS"/>
       </predecessors>
     </task>
-    <task id="5" name="Referencial Te&#xF3;rico" note="" work="259200" start="20150312T000000Z" end="20150324T170000Z" work-start="20150312T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+    <task id="5" name="Referencial Te&#xF3;rico" note="" work="259200" start="20150312T000000Z" end="20150324T170000Z" work-start="20150312T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150312T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="4" type="FS"/>
       </predecessors>
     </task>
-    <task id="6" name="Prop&#xF3;sito e Motiva&#xE7;&#xE3;o" note="" work="230400" start="20150316T000000Z" end="20150325T170000Z" work-start="20150316T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
+    <task id="6" name="Prop&#xF3;sito e Motiva&#xE7;&#xE3;o" note="" work="230400" start="20150316T000000Z" end="20150325T170000Z" work-start="20150316T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150316T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="5" type="FS"/>
       </predecessors>
     </task>
-    <task id="7" name="Modelo Descritivo" note="" work="86400" start="20150325T000000Z" end="20150327T170000Z" work-start="20150325T080000Z" percent-complete="70" priority="0" type="normal" scheduling="fixed-work">
+    <task id="7" name="Modelo Descritivo" note="" work="86400" start="20150325T000000Z" end="20150327T170000Z" work-start="20150325T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150325T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="6" type="FS"/>
       </predecessors>
     </task>
-    <task id="8" name="Requisitos Funcionais e N&#xE3;o Funcionais" note="" work="144000" start="20150319T000000Z" end="20150325T170000Z" work-start="20150319T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150319T000000Z"/>
+    <task id="8" name="Requisitos Funcionais e N&#xE3;o Funcionais" note="" work="460800" start="20150325T000000Z" end="20150415T170000Z" work-start="20150325T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150325T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="6" type="FS"/>
       </predecessors>
     </task>
-    <task id="9" name="Diagramas de Caso de Uso" note="" work="316800" start="20150309T000000Z" end="20150323T170000Z" work-start="20150309T080000Z" percent-complete="99" priority="0" type="normal" scheduling="fixed-work">
+    <task id="9" name="Diagramas de Caso de Uso" note="" work="1756800" start="20150309T000000Z" end="20150601T170000Z" work-start="20150309T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150309T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="7" type="FS"/>
         <predecessor id="1" predecessor-id="8" type="FS"/>
       </predecessors>
     </task>
-    <task id="10" name="Especifica&#xE7;&#xE3;o de Caso de Uso" note="" work="374400" start="20150313T000000Z" end="20150331T170000Z" work-start="20150313T080000Z" percent-complete="90" priority="0" type="normal" scheduling="fixed-work">
+    <task id="10" name="Especifica&#xE7;&#xE3;o de Caso de Uso" note="" work="374400" start="20150313T000000Z" end="20150331T170000Z" work-start="20150313T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150313T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="9" type="FS"/>
       </predecessors>
     </task>
-    <task id="11" name="Modelo Entidade Relacionamento - MER" note="" work="86400" start="20150330T000000Z" end="20150401T170000Z" work-start="20150330T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150330T000000Z"/>
+    <task id="11" name="Modelo Entidade Relacionamento - MER" note="" work="489600" start="20150511T000000Z" end="20150602T170000Z" work-start="20150511T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150511T000000Z"/>
     </task>
-    <task id="12" name="Driagrama de Classes" note="" work="230400" start="20150417T000000Z" end="20150428T170000Z" work-start="20150417T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150417T000000Z"/>
+    <task id="12" name="Driagrama de Classes" note="" work="288000" start="20150520T000000Z" end="20150602T170000Z" work-start="20150520T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150520T000000Z"/>
     </task>
-    <task id="13" name="Diagramas de Sequ&#xEA;ncia" note="" work="230400" start="20150429T000000Z" end="20150508T170000Z" work-start="20150429T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150429T000000Z"/>
+    <task id="13" name="Diagramas de Sequ&#xEA;ncia" note="" work="259200" start="20150602T000000Z" end="20150612T170000Z" work-start="20150602T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150602T000000Z"/>
       <predecessors>
         <predecessor id="1" predecessor-id="12" type="FS"/>
         <predecessor id="1" predecessor-id="11" type="FS"/>
       </predecessors>
     </task>
-    <task id="14" name="Prot&#xF3;tipos de Tela" note="" work="115200" start="20150511T000000Z" end="20150512T170000Z" work-start="20150511T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150511T000000Z"/>
+    <task id="14" name="Desenvolvimento de estrutura do servidor" note="" work="259200" start="20150528T000000Z" end="20150603T120000Z" work-start="20150528T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150528T000000Z"/>
     </task>
-    <task id="15" name="Desenvolvimento de estrutura do servidor" note="" work="144000" start="20150513T000000Z" end="20150515T120000Z" work-start="20150513T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150513T000000Z"/>
+    <task id="15" name="Desenvolvimento de estrutura web" note="" work="57600" start="20150527T000000Z" end="20150528T170000Z" work-start="20150527T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150527T000000Z"/>
     </task>
-    <task id="16" name="Desenvolvimento de estrutura web" note="" work="57600" start="20150518T000000Z" end="20150519T170000Z" work-start="20150518T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150518T000000Z"/>
-      <predecessors>
-        <predecessor id="1" predecessor-id="14" type="FS"/>
-      </predecessors>
+    <task id="16" name="Desenvolvimento de estrutura android" note="" work="201600" start="20150525T000000Z" end="20150602T170000Z" work-start="20150525T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150525T000000Z"/>
     </task>
-    <task id="17" name="Desenvolvimento de estrutura android" note="" work="201600" start="20150520T000000Z" end="20150528T170000Z" work-start="20150520T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150520T000000Z"/>
-      <predecessors>
-        <predecessor id="1" predecessor-id="14" type="FS"/>
-      </predecessors>
+    <task id="17" name="Desenvolvimento de estrutura de acesso" note="" work="144000" start="20150528T000000Z" end="20150603T170000Z" work-start="20150528T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150528T000000Z"/>
     </task>
-    <task id="18" name="Desenvolvimento de estrutura de acesso" note="" work="144000" start="20150529T000000Z" end="20150604T170000Z" work-start="20150529T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150529T000000Z"/>
-    </task>
-    <task id="19" name="Conclus&#xF5;es" note="" work="86400" start="20150604T000000Z" end="20150608T170000Z" work-start="20150604T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150604T000000Z"/>
-    </task>
-    <task id="20" name="Preparo da apresenta&#xE7;&#xE3;o" note="" work="115200" start="20150609T000000Z" end="20150612T170000Z" work-start="20150609T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
-      <constraint type="must-start-on" time="20150609T000000Z"/>
-    </task>
-    <task id="21" name="Apresenta&#xE7;&#xE3;o" note="" work="28800" start="20150615T000000Z" end="20150615T170000Z" work-start="20150615T080000Z" percent-complete="0" priority="0" type="normal" scheduling="fixed-work">
+    <task id="18" name="Conclus&#xF5;es" note="" work="28800" start="20150615T000000Z" end="20150615T170000Z" work-start="20150615T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
       <constraint type="must-start-on" time="20150615T000000Z"/>
+    </task>
+    <task id="19" name="Preparo da apresenta&#xE7;&#xE3;o" note="" work="28800" start="20150615T000000Z" end="20150615T170000Z" work-start="20150615T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150615T000000Z"/>
+    </task>
+    <task id="20" name="Apresenta&#xE7;&#xE3;o" note="" work="28800" start="20150617T000000Z" end="20150617T170000Z" work-start="20150617T080000Z" percent-complete="100" priority="0" type="normal" scheduling="fixed-work">
+      <constraint type="must-start-on" time="20150617T000000Z"/>
     </task>
   </tasks>
   <resource-groups/>
@@ -148,26 +139,24 @@
     <resource id="16" name="Andr&#xE9;" short-name="" type="1" units="0" email="" note="" std-rate="0"/>
   </resources>
   <allocations>
-    <allocation task-id="17" resource-id="4" units="100"/>
-    <allocation task-id="15" resource-id="5" units="100"/>
-    <allocation task-id="18" resource-id="6" units="100"/>
-    <allocation task-id="16" resource-id="6" units="100"/>
+    <allocation task-id="16" resource-id="4" units="100"/>
+    <allocation task-id="14" resource-id="5" units="100"/>
+    <allocation task-id="17" resource-id="6" units="100"/>
+    <allocation task-id="15" resource-id="6" units="100"/>
     <allocation task-id="13" resource-id="7" units="100"/>
     <allocation task-id="12" resource-id="7" units="100"/>
     <allocation task-id="9" resource-id="7" units="100"/>
     <allocation task-id="3" resource-id="8" units="100"/>
-    <allocation task-id="15" resource-id="9" units="100"/>
-    <allocation task-id="19" resource-id="10" units="100"/>
+    <allocation task-id="14" resource-id="9" units="100"/>
+    <allocation task-id="18" resource-id="10" units="100"/>
     <allocation task-id="10" resource-id="10" units="100"/>
     <allocation task-id="8" resource-id="10" units="100"/>
     <allocation task-id="7" resource-id="10" units="100"/>
     <allocation task-id="6" resource-id="10" units="100"/>
     <allocation task-id="5" resource-id="10" units="100"/>
     <allocation task-id="4" resource-id="10" units="100"/>
-    <allocation task-id="21" resource-id="11" units="100"/>
     <allocation task-id="20" resource-id="11" units="100"/>
-    <allocation task-id="14" resource-id="12" units="100"/>
-    <allocation task-id="14" resource-id="13" units="100"/>
+    <allocation task-id="19" resource-id="11" units="100"/>
     <allocation task-id="11" resource-id="14" units="100"/>
   </allocations>
 </project>
